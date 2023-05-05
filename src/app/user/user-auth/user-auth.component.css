@@ -1,0 +1,31 @@
+
+.wrap4{
+    text-align: center;
+    padding-top: 40px;
+}
+.card{
+   width: 50%;
+   height:auto;
+    background-color: #ccc;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.row{
+    padding: 0 34px;
+
+}
+.button{
+    text-align: center;
+    padding-bottom:10px ;
+}
+.button .btn{
+    background-color: black;
+}
+.openlogin{
+    align-items: center;
+    text-align: center;
+}

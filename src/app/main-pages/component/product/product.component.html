@@ -1,0 +1,20 @@
+<div class="wrap-3">
+  <div class="col-2">
+<h1 class="heading">Product List</h1></div>
+<div class="product">
+
+  <div class="card" style="width: 18rem;" *ngFor="let items of Productlists">
+    <img class="card-img-top" src={{items.p_image}} alt="Card image cap" width="200px" height="200px">
+    <div class="card-body">
+      <h5 class="card-title">{{items.p_name}}</h5>
+      <p class="card-text"><span>Price: </span>{{items.p_price}}</p>
+    </div>
+   
+    <div class="card-body">
+      
+      <a routerLink="/product-details/{{items.id}}" class="card-link">View Details</a>
+    </div>
+  </div>
+  </div>
+</div>
+<app-footer></app-footer>

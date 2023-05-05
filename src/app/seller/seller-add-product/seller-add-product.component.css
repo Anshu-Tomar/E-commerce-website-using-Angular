@@ -1,0 +1,28 @@
+.wrap5{
+   
+}
+.heading{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.form-group .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+.form-group .form-control:active{
+   border: none;
+   color: black;
+}
+.button{
+    text-align: center;
+}
+.button .btn{
+    width: 12%;
+    margin-bottom: 10px;
+}

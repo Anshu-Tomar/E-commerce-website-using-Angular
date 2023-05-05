@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="wrap5">
+    <div class="heading">
+        <h1>Update Product</h1>
+        <p class="message-p">{{productMessage}}</p>
+    </div>
+
+<form [formGroup]="updateProduct" (ngSubmit)="onUpdate($event)">
+    <div class="form-group mt-2 ">
+      <!-- <label for="p_name">Product Name</label> -->
+      <input type="text" class="form-control" formControlName="p_name" [(ngModel)]="productData.p_name"  placeholder="Enter Product Name">
+    </div>
+    <div class="form-group mt-2">
+        <!-- <label for="p_price">Product Price</label> -->
+        <input type="text" class="form-control" formControlName="p_price" [(ngModel)]="productData.p_price" placeholder="Enter Product Price">
+      </div>
+      <div class="form-group mt-2">
+        <!-- <label for="p_color">Product Color </label> -->
+        <input type="text" class="form-control" formControlName="p_color" [(ngModel)]="productData.p_color" placeholder="Enter Product Color">
+      </div>
+      <div class="form-group mt-2">
+        <!-- <label for="p_category">Product Category</label> -->
+        <input type="text" class="form-control" formControlName="p_category" [(ngModel)]="productData.p_category" placeholder="Enter Product Category">
+      </div>
+
+      <div class="form-group mt-2">
+        <!-- <label for="p_description">Product Description</label> -->
+        <textarea type="text" class="form-control" formControlName="p_description" [(ngModel)]="productData.p_description" placeholder="Enter Product Description"></textarea>
+      </div>
+      
+      <div class="form-group mt-2">
+        <!-- <label for="p_image">Product Image</label> -->
+        <input type="text" class="form-control" formControlName="p_image" [(ngModel)]="productData.p_image" placeholder="image url">
+        <img class="img-responsive" src ="{{updateProduct.value.p_image}}"  width="50%" height="50%">
+    </div>
+    <div class="form-button">
+        <button  class="btn btn-primary mt-1 w-50px">Submit</button>
+      </div> 
+  </form>
+</div>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>

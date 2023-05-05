@@ -1,0 +1,67 @@
+
+<!-- contact us -->
+
+<section class="contact-inner animated fadeInUp wow contact">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-6 col-xs-12">
+                    <h2 class="heading-left"><span>Send Message</span></h2>
+                    <p>We welcome you to contact us with any questions or comments. Please complete the form below with your name, email address and message and we will be sure to respond back within 24-48 hours.</p>
+                   
+                    <form name="sentMessage" #contactForm (ngSubmit)="submit(contactForm)"  novalidate>
+                        <div class="row">
+                            <div class="control-group form-group col-md-6">
+                                <div class="controls">
+                                    <label>First Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group col-md-6">
+                                <div class="controls">
+                                    <label>Last Name:</label>
+                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group col-md-6">
+                                <div class="controls">
+                                    <label>Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group col-md-6">
+                                <div class="controls">
+                                    <label>Email Address:</label>
+                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                </div>
+                            </div>
+                            <div class="control-group form-group col-md-12">
+                                <div class="">
+                                    <label>Message:</label>
+                                    <textarea rows="6" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12 contact-info">
+                    <h4>Address</h4>
+                    <p>Block C xyz<br>Noida U.P</p>
+                    <p>Tel: <a href="tel:+12 (345) 678 911">7352227375</a></p>
+                    <p>Email: <a href="mailto: info@abc.com.com">xyz@gmail.com</a></p>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162301.126543804!2d-102.12283980594549!3d57.69139001111566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sin!4v1555913918937!5m2!1sen!2sin" width="100%" height="355" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</section>
+<!-- /contact us -->
+<div class="footer">
+    <app-footer></app-footer>
+  </div>

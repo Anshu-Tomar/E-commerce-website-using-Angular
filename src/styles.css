@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* scroll bar custom */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+ul{
+    list-style: none;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+img{
+    opacity: 0.4;
+}
+button{
+    cursor: pointer;
+}
+
+.message-p{
+    color: green;
+    font-size: medium;
+    text-align: center;
+}
+.delete{
+    display: flex;
+    color: aliceblue;
+    background: red;
+    font-size: medium;
+    flex: end;
+}
+.delete:hover{
+    background: #b30000;
+    color: white;
+}
+hr{
+    border: 1px solid rgb(75, 74, 74);
+    background:rgb(75, 74, 74) ;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    
+}

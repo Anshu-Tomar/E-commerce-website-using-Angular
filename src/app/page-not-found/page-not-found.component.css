@@ -1,0 +1,23 @@
+.wrap{
+    background: #ccc;
+    padding: 250px;
+    /* height: 90vh; */
+    width: 100%;
+}
+.container h1{
+    align-items: center;
+    display: block;
+    text-align: center;
+    color: rgba(109, 3, 3, 0.863);
+    font-size:110px;
+    font-weight: 600;
+
+}
+.container p{
+    align-items: center;
+    display: block;
+    text-align: center;
+    color: rgba(109, 3, 3, 0.863);
+    font-size: 65px;
+    font-weight: 400;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+<div class="product-list">
+    <h1>All List</h1>
+    <p class="message-p">{{productMessage}}</p>
+    <table class="table p-5">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Color</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let items of productsLists">
+            <th scope="row" ><img src="{{items.p_image}}" width="100px" height="100px"></th>
+            <th >{{items.p_name}}</th>
+            <td>{{items.p_price}}</td>
+            <td>{{items.p_color}}</td>
+            <td>{{items.p_category}}</td>
+            <td>{{items.p_description}}</td>
+            <td>
+              <button class="btn delete" (click)="deleteItems(items.id)">Delete</button>
+              <button class="btn "><a routerLink="/seller/seller-update-product/{{items.id}}">Update</a></button></td>
+            </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>

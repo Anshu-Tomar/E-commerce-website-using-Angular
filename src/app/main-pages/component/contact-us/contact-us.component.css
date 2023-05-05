@@ -1,0 +1,47 @@
+.contact-inner iframe {
+    margin-top: 5px;
+}
+
+.contact{
+    padding: 15px;
+}
+.contact-inner h2.heading-left {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contact-inner .contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-inner .contact-info h4 {
+    color: #000;
+    font-weight: 600;
+}
+
+.contact-inner .contact-info a {
+    color: #000;
+}
+
+.contact-inner .contact-info a:hover {
+    color: #828282;
+}
+
+.contact-inner .contact-info h4.mt {
+    margin-top: 35px;
+}
+
+.contact-inner form label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #000;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .contact-info {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,68 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" *ngIf="popularProducts">
+  <div class="carousel-inner">
+    <div class="carousel-item active" *ngFor="let items of popularProducts" >
+      <a routerLink="product-details/{{items.id}}"><img src={{items.p_image}} class="d-block w-100 image1"></a> 
+      <div class="carousel-caption ">
+        <h5>{{items.p_name}}</h5>
+        <p>{{items.p_description}}</p>
+      </div>
+    </div>
+   
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="wrap-3">
+  <div class="container">
+<div class="product">
+<div class="card" style="width: 18rem;" *ngFor="let items of homeProduct">
+  <img class="card-img-top" src={{items.p_image}} alt="Card image cap" width="200px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">{{items.p_name}}</h5>
+    <p class="card-text"><span>Price: </span>{{items.p_price}}</p>
+  </div>
+ 
+  <div class="card-body">
+    <!-- <a routerLink="#" class="card-link">Add to Card </a> -->
+    <a routerLink="product-details/{{items.id}}" class="card-link">View Details</a>
+  </div>
+</div>
+</div>
+</div>
+<div class="product-link">
+  <!-- <a routerLink="#" class="card-link">Add to Card </a> -->
+  <a routerLink="product" class="link">View Product List</a>
+</div>
+</div>
+
+<div class="wrap-6">
+  <div class="container">
+      <div class="row">
+         
+          <div class="col-12">
+                  <div class="slides">
+                            <!-- <div class="col-4">
+                              <p>Contact Us</p>
+                            </div> -->
+                              <div class="col-6">
+                                <form action="">
+                                    <input type="email" placeholder="Enter your email.." required aria-label="Email">
+                                    <button class="btn">Subscribe</button>
+                                </form>
+                            </div>
+                  </div>
+          </div>
+          
+      </div>
+  </div>
+</div>
+
+  <app-footer></app-footer>
+

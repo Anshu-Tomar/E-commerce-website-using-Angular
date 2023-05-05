@@ -1,0 +1,61 @@
+.wrap2{
+    background: #575b5f;
+    color: white;
+    /* padding: 200px 0; */
+}
+.header{
+    position: fixed;
+}
+.image1{
+    padding: 20px 0;
+    object-position: center;
+    object-fit: contain;
+    height: 650px;
+    width: 1920px;
+}
+.product{
+    display: flex;
+    flex-flow: row wrap;    
+    margin: 10px;
+    padding: 15px;
+    overflow: auto;
+}
+.card{
+    margin: 10px 10px;
+}
+.row{
+    padding: 0px 10px;
+    display: flex;
+  
+}
+.product-link{
+    flex: 1 1 auto;
+    text-align: end;
+    padding-right: 40px;
+    margin-right: 395px;
+
+}
+.product-link .link{
+   border-bottom:2px solid darkred;
+   color: darkred ;
+   font-size: 1rem;
+   font-weight: 700;
+
+}
+
+.wrap-3{ background:#ccc;  padding: 20px 0;}
+.wrap-6{ background: #ca3c3c; color: #ffff; padding: 40px 0; }
+.slides{display: flex; flex-flow: row wrap;   justify-content: space-between;}
+.slides input{ background: transparent; border: none; height: 30px; width: 370px; font: 36px pt, sans-serif; color: #fff; text-align: center;}
+.slides input::placeholder{ color: #fff;}
+.slides .btn{ background: #fff; text-align: center; padding: 0px 8px;  border: 1px solid white;   margin-left: 10px;}
+.slides .btn:hover{ background:  #666;  color: white; text-align: center; border: 1px solid darkred; border-radius: 5px;}
+.col-6{ flex: 1 0 50%; padding: 0 15px; max-width: 50%;}
+
+.slides form{ background:transparent;  display:flex;  padding: 10px; float: right; line-height: 60px; margin: 0px 10px; }
+/* .slides blockquote{ font-size: 40px; font-weight: 600px;} */
+.slides p{ 
+     font-size: 66px;
+    line-height: 60px;
+    border-bottom: 8px solid;
+   }
