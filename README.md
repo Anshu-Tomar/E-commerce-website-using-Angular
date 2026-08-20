@@ -1,34 +1,99 @@
-# App11
+# E-commerce Website using Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+A full-stack e-commerce platform with two user roles — **buyers** and **sellers** — built with Angular on the frontend and a Node.js/Express/MongoDB backend.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Buyer (User) side**
+- User registration & login (`user/user-auth`)
+- Browse products and add items to cart (`user/carts`)
+- View past orders (`user/my-order`)
 
-## Code scaffolding
+**Seller side**
+- Seller registration & login (`seller/seller-auth`)
+- Seller dashboard / storefront (`seller/seller-home`)
+- Add new products (`seller/seller-add-product`)
+- Edit/update existing products (`seller/seller-update-product`)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Shared**
+- Common auth module (`auth`)
+- Landing/home and other public pages (`main-pages`)
+- Reusable shared components (`shared-pages`)
+- 404 page (`page-not-found`)
 
-## Build
+## Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Layer | Technology |
+|---|---|
+| Frontend | Angular 14, Bootstrap 5, ng-multiselect-dropdown, RxJS |
+| Backend | Node.js, Express 5 |
+| Database | MongoDB (Mongoose ODM) |
+| Mock data (optional) | `db.json` (for local prototyping with `json-server`) |
 
-## Running unit tests
+## Project Structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+E-commerce-website-using-Angular/
+├── Backend/                 # Express + Mongoose API
+│   ├── index.js              # Server entry point
+│   └── package.json
+└── src/
+    └── app/
+        ├── auth/              # Shared authentication logic
+        ├── main-pages/        # Landing / public pages
+        ├── models/            # TypeScript interfaces
+        ├── page-not-found/    # 404 page
+        ├── seller/
+        │   ├── seller-auth/
+        │   ├── seller-home/
+        │   ├── seller-add-product/
+        │   └── seller-update-product/
+        ├── service/           # Shared Angular services
+        ├── shared-pages/      # Reusable UI components
+        └── user/
+            ├── user-auth/
+            ├── carts/
+            └── my-order/
+```
 
-## Running end-to-end tests
+## Installation Guide
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Prerequisites
+- Node.js 16+
+- npm
+- MongoDB running locally
+- Angular CLI (`npm install -g @angular/cli`)
 
-## Further help
+### 1. Clone the repository
+```bash
+git clone https://github.com/Anshu-Tomar/E-commerce-website-using-Angular.git
+cd E-commerce-website-using-Angular
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 2. Backend setup
+```bash
+cd Backend
+npm install
+node index.js
+```
+The API server starts on `http://localhost:3001` and connects to a local MongoDB instance (database: `e-comm-store-db`).
 
+### 3. Frontend setup
+Open a second terminal:
+```bash
+npm install
+ng serve
+```
+The app runs on `http://localhost:4200`.
 
-#  Command
+## Usage Examples
 
-tailwind css configuration,
- npm init
- npm install express --save
+- Visit `http://localhost:4200` to browse the storefront as a guest.
+- Register as a **User** to add products to your cart and place orders.
+- Register as a **Seller** to access the seller dashboard, list new products, and manage your inventory.
+
+## Notes for Future Improvement
+- Add JWT-based auth guards to protect seller/user routes
+- Move MongoDB connection string to environment variables
+- Add product search & filtering
+- Add payment gateway integration
